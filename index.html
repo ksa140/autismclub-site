@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</html>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="images/autism-club-logo.png" style="height: 120px;"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">PROGRAMS</a></li>
+                    <li><a href="index.html">JOB EDUCATION</a></li>
+                    <li><a href="index.html">CALENDAR</a></li>
+                    <li><a href="index.html">EVENT</a></li>
+                    <li><a href="index.html">ABOUT US</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Autism Club</h1>
+    <p>Empowering individuals with autism to reach their full potential</p>
+    <a href="" class="hero-btn">Join Us</a>
+
+</section>
+
+<!----- Programs ----->
+
+<section class="programs">
+    <h1>Programs</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies tincidunt, nunc nunc.</p>
+
+    <div class="row">
+        <div class="programs-col">
+            <h3>Digital Arts Club</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies tincidunt, nunc nunc.</p>
+        </div>
+        <div class="programs-col">
+            <h3>Drawing Club</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies tincidunt, nunc nunc.</p>
+        </div>
+        <div class="programs-col">
+            <h3>Golf Club</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies tincidunt, nunc nunc.</p>
+        </div>
+        <div class="programs-col">
+            <h3>Media Club</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies tincidunt, nunc nunc.</p>
+        </div>
+        <div class="programs-col">
+            <h3>Robot Coding Club</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec ultricies tincidunt, nunc nunc.</p>
+        </div>
+</section>
+
+
+<!--- Javascript Toggle Menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

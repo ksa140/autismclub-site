@@ -171,6 +171,11 @@ a.menu-link { display: none; }
     z-index: 12;
     width: 100%;
     top: 0;
+
+    display: flex;
+    align-items: center;  /* ✅ centers children vertically */
+    justify-content: space-between; /* keeps logo left and menu right */
+    padding: 0 60px; /* space on both sides */
 }
 
 .main-header .logo {
@@ -197,7 +202,7 @@ a.menu-link { display: none; }
 
 .main-menu li {
     display: inline-block;
-    line-height: 79px;
+    line-height: 0px;
     margin-left: 15px;
     position: relative;
 }
@@ -229,11 +234,14 @@ a.menu-link { display: none; }
 
 .main-menu li .sub-menu {
     position: absolute;
-    width: 180px;
+    top: calc(100% + 25px);
+    left: 0;
+    width: 230px;
     background-color: #18233a;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s;
+    z-index: 1000;
 }
 
 .main-menu li:hover .sub-menu {
@@ -1591,4 +1599,16 @@ footer p a:hover {
     font-weight: 600;
     letter-spacing: 0.25px;
   }
+}
+
+/* Custom width just for About Us submenu */
+.main-menu li.about-submenu .sub-menu {
+  width: 170px; /* adjust to fit the content nicely */
+}
+
+/* Optional: tweak inner padding or font size for a tighter look */
+.main-menu li.about-submenu .sub-menu li a {
+  padding: 10px 15px;
+  font-size: 12px;
+  white-space: nowrap;
 }

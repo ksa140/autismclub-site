@@ -564,12 +564,14 @@ https://templatemo.com/tm-557-grad-school
         };
 
         $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-          if($(e.target).hasClass('external')) {
-            return;
+          const href = $(this).attr('href');
+        
+          // Only handle internal anchor links (starting with #)
+          if (href && href.startsWith('#')) {
+            e.preventDefault();
+            $('#menu').removeClass('active');
+            showSection(href, true);
           }
-          e.preventDefault();
-          $('#menu').removeClass('active');
-          showSection($(this).attr('href'), true);
         });
 
         $(window).scroll(function () {

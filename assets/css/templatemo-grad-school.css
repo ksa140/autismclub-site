@@ -305,6 +305,7 @@ a.menu-link { display: none; }
   margin-bottom: -7px;
 }
 
+
 #bg-video {
     min-width: 100%;
     min-height: 100vh;
@@ -318,13 +319,23 @@ a.menu-link { display: none; }
     display: none !important;
 }
 
-.video-overlay {
+.home-page .video-overlay {
     position: absolute;
     background-color: rgba(22,34,57,0.85);
     top: 0;
     left: 0;
     bottom: 7px;
     width: 100%;
+}
+
+.sub-page .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(22,34,57,0.85); /* dark transparent overlay */
+  z-index: 1;
 }
 
 .main-banner .caption {

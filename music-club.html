@@ -19,17 +19,18 @@
   <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
 
-<body>
-  <!-- Header -->
+<body class="sub-page">
+
+   <!--header-->
   <header class="main-header clearfix" role="header">
     <a href="index.html">
-      <img src="assets/images/autism-club-logo.png" alt="Autism Club Logo" style="height: 120px;">
+      <img src="assets/images/autism-club-logo.png" alt="Autism Club Logo" style="height: 160px;">
     </a>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="index.html#section1">Home</a></li>
-        <li class="has-submenu"><a href="index.html#section2">Club Programs</a>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu"><a href="#section2">Club Programs</a>
           <ul class="sub-menu">
             <li><a href="lego-club.html">Lego Club</a></li>
             <li><a href="robot-and-coding-club.html">Robot and Coding Club</a></li>
@@ -39,50 +40,56 @@
             <li><a href="sports-club.html">Sports Club</a></li>
           </ul>
         </li>
-        <li class="has-submenu"><a href="index.html#section8">Career Programs</a>
+        <li class="has-submenu"><a href="#section8">Career Programs</a>
           <ul class="sub-menu">
-            <li><a href="index.html#section9">Solo Content Creating</a></li>
+            <li><a href="#section9">Solo Content Creating</a></li>
           </ul>
         </li>
-        <li><a href="index.html#section10">Calendar</a></li>
-        <li><a href="index.html#section11">Event</a></li>
-        <li class="has-submenu about-submenu"><a href="index.html#section10">About Us</a>
-          <ul class="sub-menu">
-            <li><a href="index.html#section11">Who we are?</a></li>
-            <li><a href="index.html#section12">What we do?</a></li>
-            <li><a href="index.html#section13">How it works?</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#section14">Contact</a></li>
+        <li><a href="#section11">Event</a></li>
+        <li><a href="#section11">About Us</a></li>
+        <li><a href="#section14">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  Page Banner
-  <section class="section main-banner" id="top" data-section="section1">
-    <video autoplay muted loop id="bg-video">
-      <source src="assets/images/course-video.mp4" type="video/mp4" />
-    </video>
+  <section class="section main-banner" id="top" data-section="section1" style="background-image: url('assets/images/lego-photo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
     <div class="video-overlay header-text">
       <div class="caption">
         <h2><em>Music</em> Club</h2>
         <div class="main-button">
-          <a href="index.html#section2">Back to Programs</a>
+          <a href="index.html#section2">Back to Home</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Main Content -->
-  <section class="section" style="background-color: #1f2833; color: white;">
+  <section class="section d-flex align-items-center" style="background-color: #1f2833; color: white; min-height: 80vh;">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="assets/images/choose-us-image-01.png" class="img-fluid" alt="Lego Club">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 text-center mb-4">
+          <video controls class="w-100 rounded shadow">
+            <source src="assets/videos/lego-club-video.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="col-lg-6">
-          <h4 class="mb-3">Explore Creativity through Lego</h4>
-          <p>The Lego Club helps children explore creativity and teamwork through building activities tailored to different ages and abilities. It encourages social interaction, problem-solving, and fun in a safe, inclusive setting.</p>
+        <div class="col-lg-6 text-center">
+          <h4 class="mb-3" style="font-size: 30px;">Explore Creativity through Lego</h4>
+          <p style="font-size: 15px;">
+            We offer creative and structured building sessions
+              grouped by <br> children (ages 5 to 18) and young adult participants.
+          </p>
+          <p style="font-size: 15px;">
+            Each program runs for three months, with lessons designed to gradually build up to the next level of difficulty in the following term.
+          </p>
+          <p style="font-size: 15px;">
+            Sessions are designed to enhance fine motor skills, visual-spatial reasoning, and cognitive development, all of which are supported through structured LEGO play.
+          </p>
+          <p style="font-size: 15px;">
+            Research shows that LEGO activities can also improve communication skills and reduce repetitive behaviors in autism.
+          </p>
+          <p style="font-size: 15px;">
+            Through these age-specific, skill-building sessions, the LEGO Club helps participants grow in confidence, independence, and meaningful engagement.
+          </p>
         </div>
       </div>
     </div>

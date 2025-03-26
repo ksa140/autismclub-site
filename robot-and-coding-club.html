@@ -19,8 +19,9 @@
   <link rel="stylesheet" href="assets/css/lightbox.css">
 </head>
 
-<body>
-  <!-- Header -->
+<body class="sub-page">
+
+   <!--header-->
   <header class="main-header clearfix" role="header">
     <a href="index.html">
       <img src="assets/images/autism-club-logo.png" alt="Autism Club Logo" style="height: 160px;">
@@ -28,60 +29,66 @@
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="index.html#section1">Home</a></li>
-        <li class="has-submenu"><a href="index.html#section2">Club Programs</a>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-submenu"><a href="#section2">Club Programs</a>
           <ul class="sub-menu">
             <li><a href="lego-club.html">Lego Club</a></li>
             <li><a href="robot-and-coding-club.html">Robot and Coding Club</a></li>
             <li><a href="reading-and-writing-club.html">Reading and Writing Club</a></li>
             <li><a href="media-arts-club.html">Media Arts Club</a></li>
-            <li><a href="media-club.html">Music Club</a></li>
+            <li><a href="music-club.html">Music Club</a></li>
             <li><a href="sports-club.html">Sports Club</a></li>
           </ul>
         </li>
-        <li class="has-submenu"><a href="index.html#section8">Career Programs</a>
+        <li class="has-submenu"><a href="#section8">Career Programs</a>
           <ul class="sub-menu">
-            <li><a href="index.html#section9">Solo Content Creating</a></li>
+            <li><a href="#section9">Solo Content Creating</a></li>
           </ul>
         </li>
-        <li><a href="index.html#section10">Calendar</a></li>
-        <li><a href="index.html#section11">Event</a></li>
-        <li class="has-submenu about-submenu"><a href="index.html#section10">About Us</a>
-          <ul class="sub-menu">
-            <li><a href="index.html#section11">Who we are?</a></li>
-            <li><a href="index.html#section12">What we do?</a></li>
-            <li><a href="index.html#section13">How it works?</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#section14">Contact</a></li>
+        <li><a href="#section11">Event</a></li>
+        <li><a href="#section11">About Us</a></li>
+        <li><a href="#section14">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="section main-banner" id="top" data-section="section1">
-    <video autoplay muted loop id="bg-video">
-      <source src="assets/images/course-video.mp4" type="video/mp4" />
-    </video>
+  <section class="section main-banner" id="top" data-section="section1" style="background-image: url('assets/images/lego-photo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 100vh;">
     <div class="video-overlay header-text">
       <div class="caption">
         <h2><em>Robot and Coding</em> Club</h2>
         <div class="main-button">
-          <a href="index.html#section2">Back to Programs</a>
+          <a href="index.html#section2">Back to Home</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Main Content -->
-  <section class="section" style="background-color: #1f2833; color: white;">
+  <section class="section d-flex align-items-center" style="background-color: #1f2833; color: white; min-height: 80vh;">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="assets/images/choose-us-image-01.png" class="img-fluid" alt="Lego Club">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 text-center mb-4">
+          <video controls class="w-100 rounded shadow">
+            <source src="assets/videos/robot-and-coding-club-video.mp4" type="video/mp4">
+          </video>
         </div>
-        <div class="col-lg-6">
-          <h4 class="mb-3">Explore Creativity through Lego</h4>
-          <p>The Lego Club helps children explore creativity and teamwork through building activities tailored to different ages and abilities. It encourages social interaction, problem-solving, and fun in a safe, inclusive setting.</p>
+        <div class="col-lg-6 text-center">
+          <h4 class="mb-3" style="font-size: 30px;">Empower Learning through Robotics & Coding</h4>
+          <p style="font-size: 15px;">
+            Our Robot and Coding Club introduces children (ages 5 to 18) and young adults to the fundamentals of programming and hands-on engineering in an engaging, supportive environment.
+          </p>
+          <p style="font-size: 15px;">
+            Participants are grouped by similar age to ensure a comfortable pace and learning experience.
+          </p>
+          <p style="font-size: 15px;">
+            Programs follow a three-month cycle, with each term building on the last to develop stronger coding logic and technical problem-solving skills.
+          </p>
+          <p style="font-size: 15px;">
+            Activities using robots and code help boost focus, sequencing ability, and cognitive flexibility—skills often beneficial for those on the autism spectrum.
+          </p>
+          <p style="font-size: 15px;">
+            This club empowers members to explore technology with confidence and creativity, while gaining practical tools for future learning and independence.
+          </p>
         </div>
       </div>
     </div>

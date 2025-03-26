@@ -52,7 +52,7 @@ https://templatemo.com/tm-557-grad-school
         </li>
         <li class="has-submenu"><a href="#section8">Career Programs</a>
           <ul class="sub-menu">
-            <li><a href="#section9">Solo Content Creating</a></li>
+            <li><a href="#section9">Media Creator Club</a></li>
           </ul>
         </li>
         <li><a href="#section11">Event</a></li>
@@ -444,7 +444,7 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Let’s Keep In Touch</h2>
+            <h2>Join Us</h2>
           </div>
         </div>
         <div class="col-md-6">
@@ -453,30 +453,78 @@ https://templatemo.com/tm-557-grad-school
                 	
                     Please visit https://templatemo.com/contact page -->
                     
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-md-6">
-                  <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                  </fieldset>
-                </div>
-                <div class="col-md-6">
-                  <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
-                  </fieldset>
-                </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                </fieldset>
-              </div>
-              <div class="col-md-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
-                </fieldset>
-              </div>
-            </div>
-          </form>
+                    <form id="apply-form" action="" method="post">
+                      <div class="row">
+                        <!-- Name -->
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
+                          </fieldset>
+                        </div>
+                    
+                        <!-- Email -->
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
+                          </fieldset>
+                        </div>
+                    
+                        <!-- Phone Number -->
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="phone" type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+                          </fieldset>
+                        </div>
+                    
+                        <!-- Age -->
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="age" type="number" class="form-control" id="age" placeholder="Your Age" required>
+                          </fieldset>
+                        </div>
+                    
+                        <!-- Program Name -->
+                        <div class="col-md-12">
+                          <fieldset>
+                            <select name="program" class="form-control" id="program" required>
+                              <option value="" disabled selected>Select Program</option>
+                              <option value="Lego Club">Lego Club</option>
+                              <option value="Robot and Coding Club">Robot and Coding Club</option>
+                              <option value="Reading and Writing Club">Reading and Writing Club</option>
+                              <option value="Media Arts Club">Media Arts Club</option>
+                              <option value="Music Club">Music Club</option>
+                              <option value="Sports Club">Sports Club</option>
+                            </select>
+                          </fieldset>
+                        </div>
+                    
+                        <!-- Submit Button (Centered) -->
+                        <div class="col-md-12 mt-3 text-center">
+                          <fieldset>
+                            <button type="submit" id="form-submit" class="button">Apply Now</button>
+                          </fieldset>
+                        </div>
+                    
+                        <!-- Confirmation Message (Hidden by Default) -->
+                        <div class="col-md-12 mt-3">
+                          <p id="confirmation-message" style="display: none; color: #28a745; text-align: center;">
+                          </p>
+                        </div>
+                      </div>
+                    </form>
+                    
+                    <!-- JavaScript to show confirmation -->
+                    <script>
+                      document.getElementById("apply-form").addEventListener("submit", function (e) {
+                        e.preventDefault(); // Prevent form from reloading page
+                    
+                        // Optionally, clear the form
+                        this.reset();
+                    
+                        // Show confirmation message
+                        document.getElementById("confirmation-message").style.display = "block";
+                      });
+                    </script>
         </div>
         <div class="col-md-6">
           <div id="map">

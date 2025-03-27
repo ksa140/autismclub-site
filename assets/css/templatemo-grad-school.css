@@ -43,7 +43,7 @@ p {
 }
 
 .section-heading h2:before {
-  display: none;
+  display: none
 }
 
 .section-heading h2 {
@@ -1579,6 +1579,7 @@ footer p a:hover {
   }
 
   .main-menu li .sub-menu {
+
     opacity: 1;
     visibility: visible;
     position: static;
@@ -1628,4 +1629,82 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   appearance: textfield;
   -moz-appearance: textfield;
+}
+
+/* Nested Submenu Styling */
+.main-menu li .sub-menu li.has-submenu {
+  position: relative;
+}
+
+.main-menu li .sub-menu li.has-submenu > a::after {
+  content: '\f105'; /* Right arrow */
+  font-family: "FontAwesome";
+  margin-left: 5px;
+  float: right;
+}
+
+/* Level 2 (nested) submenu */
+.main-menu li .sub-menu li.has-submenu .sub-menu {
+  position: absolute;
+  top: -15px;
+  left: 100%;
+  width: 270px;
+  background-color: #18233a;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  z-index: 1000;
+}
+
+/* Show nested submenu on hover */
+.main-menu li .sub-menu li.has-submenu:hover > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Keep nested submenu items consistent */
+.main-menu li .sub-menu li .sub-menu li {
+  display: block;
+  line-height: 20px;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #121b2f;
+  
+}
+
+.main-menu li .sub-menu li .sub-menu li:first-child {
+  padding-top: 15px;
+}
+
+.main-menu li .sub-menu li .sub-menu li:last-child {
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+
+.main-menu li .sub-menu li .sub-menu li a {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0px 15px;
+  letter-spacing: 0.5px;
+  border: none;
+  color: #fff;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.main-menu li .sub-menu li .sub-menu li a:hover {
+  color: #f5a425;
+  border: none;
+}
+
+.main-menu li .sub-menu li.has-submenu > a::after {
+  content: '\f107'; /* same arrow as top-level dropdown */
+  font-family: "FontAwesome";
+  font-weight: 900;
+  display: inline-block;
+  transform: translateX(-50%) rotate(-90deg); /* Rotate to point right */
+  margin-left: 0px;
+  color: #fff;
 }

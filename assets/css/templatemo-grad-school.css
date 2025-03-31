@@ -1718,3 +1718,36 @@ input[type=number] {
   position: relative;
   z-index: 1;
 }
+
+.carousel-item {
+  background-color: #1f2833; /* fallback background color */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh; /* or a fixed height like 600px */
+}
+
+.carousel,
+.carousel-inner {
+  background-color: #1f2833; /* match your site’s theme */
+}
+
+.caption-up {
+  position: absolute;
+  top: 42%; /* Was too high — try 35% */
+  /* width: 100%; */
+  text-align: center;
+}
+
+.carousel-caption h2,
+.carousel-caption h6 {
+  font-weight: 600 !important;
+}

@@ -1708,3 +1708,13 @@ input[type=number] {
   margin-left: 0px;
   color: #fff;
 }
+
+.section.contact {
+  background-color: #1f2833 !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  z-index: 1;
+}

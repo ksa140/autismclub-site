@@ -37,8 +37,15 @@
             <li><a href="robot-coding-club.html">Robot Coding Club</a></li>
             <li><a href="reading-and-writing-club.html">Reading and Writing Club</a></li>
             <li><a href="media-arts-club.html">Media Arts Club</a></li>
-            <li><a href="music-club.html">Music Club</a></li>
-            <li><a href="sports-club.html">Sports Club</a></li>
+            <!-- <li><a href="music-club.html">Music Club</a></li> -->
+                      <!-- Sports Club (Golf & Running at same level) -->
+          <li class="has-submenu sports-submenu">
+            <a href="sports-club.html">Sports Club</a>
+            <ul class="sub-menu">
+              <li><a href="sports-club.html">Golf Club</a></li>
+              <li><a href="sports-club.html">Running Club</a></li>
+            </ul>
+          </li>
           </ul>
         </li>
         <li class="has-submenu"><a href="media-creator-club.html">Career Programs</a>
@@ -120,7 +127,7 @@
                               <option value="Robot and Coding Club">Robot and Coding Club</option>
                               <option value="Reading and Writing Club">Reading and Writing Club</option>
                               <option value="Media Arts Club">Media Arts Club</option>
-                              <option value="Music Club">Music Club</option>
+                              <!-- <option value="Music Club">Music Club</option> -->
                               <option value="Sports Club">Sports Club</option>
                               <option value="Media Creator Club">Media Creator Club</option>
                             </select>
@@ -208,6 +215,18 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLink = document.querySelector(".menu-link");
+      const mainNav = document.querySelector(".main-nav");
+  
+      menuLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        mainNav.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 
 </html>

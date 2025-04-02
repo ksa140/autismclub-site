@@ -37,7 +37,7 @@
             <li><a href="reading-and-writing-club.html">Reading and Writing Club</a></li>
             <li><a href="media-arts-club.html">Media Arts Club</a></li>
           <!-- Music Club (with wider submenu if styled) -->
-          <li class="has-submenu music-submenu">
+          <!-- <li class="has-submenu music-submenu">
             <a href="music-club.html">Music Club</a>
             <ul class="sub-menu">
               <li><a href="music-club.html">Guitar Club</a></li>
@@ -45,7 +45,7 @@
               <li><a href="music-club.html">Ukulele Club</a></li>
               <li><a href="music-club.html">Digital Music Composition Club</a></li>
             </ul>
-          </li>
+          </li> -->
 
           <!-- Sports Club (Golf & Running at same level) -->
           <li class="has-submenu sports-submenu">
@@ -149,6 +149,18 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLink = document.querySelector(".menu-link");
+      const mainNav = document.querySelector(".main-nav");
+  
+      menuLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        mainNav.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 
 </html>

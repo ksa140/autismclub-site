@@ -30,7 +30,7 @@ body {
     padding: 15px;
   }
 
-/* Top-level dropdown menu */
+/* Top-level dropdown menu
 .main-nav ul.sub-menu {
   display: none;
   position: absolute;
@@ -77,7 +77,7 @@ body {
 .main-nav ul.sub-menu li a:hover {
   background-color: #f5a425;
   color: #000;
-}
+} */
 
 
 

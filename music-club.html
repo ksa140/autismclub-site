@@ -255,6 +255,18 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLink = document.querySelector(".menu-link");
+      const mainNav = document.querySelector(".main-nav");
+  
+      menuLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        mainNav.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1774,3 +1774,27 @@ input[type=number] {
   }
 }
 
+@media (max-width: 991px) {
+  .main-nav {
+    display: none;
+    background-color: #1f2833;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+}
+.sub-menu {
+  display: none;
+}
+.has-submenu.open > .sub-menu {
+  display: block;
+}
+
+
+

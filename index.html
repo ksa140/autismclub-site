@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <style>
     .sports-card {
@@ -1137,6 +1137,13 @@ https://templatemo.com/tm-557-grad-school
 
 
   <!-- Scripts -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script> -->
+
+  <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- <script src="vendor/jquery/jquery.min.js"></script>     -->
@@ -1151,79 +1158,106 @@ https://templatemo.com/tm-557-grad-school
     <script src="assets/js/custom.js"></script>
 
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
+        // Hamburger toggle
         $('.menu-link').on('click', function(e) {
           e.preventDefault();
           $('#menu').toggleClass('active');
         });
-      });
-    </script>
-
-    <script>
-        //according to loftblog tut
-        $('.nav li:first').addClass('active');
-
-        var showSection = function showSection(section, isAnimate) {
-          var
-          direction = section.replace(/#/, ''),
-          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-          reqSectionPos = reqSection.offset().top - 0;
-
-          if (isAnimate) {
-            $('body, html').animate({
-              scrollTop: reqSectionPos },
-            800);
-          } else {
-            $('body, html').scrollTop(reqSectionPos);
-          }
-
-        };
-
-        var checkSection = function checkSection() {
-          $('.section').each(function () {
-            var
-            $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-            if (topEdge < wScroll && bottomEdge > wScroll) {
-              var
-              currentId = $this.data('section'),
-              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-              reqLink.closest('li').addClass('active').
-              siblings().removeClass('active');
-            }
-          });
-        };
-
-        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-          const href = $(this).attr('href');
-        
-          // Only handle internal anchor links (starting with #)
-          if (href && href.startsWith('#')) {
-            e.preventDefault();
-            $('#menu').removeClass('active');
-            showSection(href, true);
-          }
-        });
-
-        $(window).scroll(function () {
-          checkSection();
-        });
-    </script>
-
-    <script>
-      // Hamburger menu toggle
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuLink = document.querySelector(".menu-link");
-        const mainNav = document.querySelector(".main-nav");
     
-        menuLink.addEventListener("click", function (e) {
-          e.preventDefault();
-          mainNav.classList.toggle("active");
+        // Submenu toggle for mobile screens
+        $('.has-submenu > a').on('click', function(e) {
+          const isMobile = $(window).width() <= 991;
+          const href = $(this).attr('href');
+          const isClickable = href && href !== "#";
+        
+          if (isMobile) {
+            // Only prevent default if there's no actual link (href="#")
+            if (!isClickable) {
+              e.preventDefault();
+            }
+        
+            e.stopPropagation();
+        
+            const parentItem = $(this).parent();
+        
+            // Collapse other top-level items if this is top-level
+            if (!$(this).closest('.sub-menu').length) {
+              $('.main-menu > .has-submenu').not(parentItem).removeClass('open');
+            }
+        
+            parentItem.toggleClass('open');
+          }
         });
       });
     </script>
+    <script>
+      //according to loftblog tut
+      $('.nav li:first').addClass('active');
+
+      var showSection = function showSection(section, isAnimate) {
+        var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $('body, html').animate({
+            scrollTop: reqSectionPos },
+          800);
+        } else {
+          $('body, html').scrollTop(reqSectionPos);
+        }
+
+      };
+
+      var checkSection = function checkSection() {
+        $('.section').each(function () {
+          var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+            reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+          }
+        });
+      };
+
+      $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+        const href = $(this).attr('href');
+      
+        // Only handle internal anchor links (starting with #)
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection(href, true);
+        }
+      });
+
+      $(window).scroll(function () {
+        checkSection();
+      });
+  </script>
+
+  
+
+  <script>
+    // Hamburger menu toggle
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuLink = document.querySelector(".menu-link");
+      const mainNav = document.querySelector(".main-nav");
+  
+      menuLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        mainNav.classList.toggle("active");
+      });
+    });
+  </script>
 
 </body>
 </html>

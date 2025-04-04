@@ -1807,3 +1807,27 @@ input[type=number] {
   }
 }
 
+@media (max-width: 950px) {
+  /* Always show nested sports submenu */
+  .sports-submenu > .sub-menu {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: static !important;
+    background-color: transparent !important;
+    border: none !important;
+    margin-top: 15px; /* ✅ adds vertical spacing below "Sports Club" */
+  }
+
+  .sports-submenu > .sub-menu > li {
+    border-bottom: none !important;
+    padding: 5px 15px;
+    text-align: center;
+  }
+
+  .sports-submenu > .sub-menu > li > a {
+    color: white !important;
+    font-weight: 600;
+  }
+}
+

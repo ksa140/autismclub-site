@@ -169,7 +169,7 @@ a.menu-link { display: none; }
     display: flex;
     align-items: center;  /* ✅ centers children vertically */
     justify-content: space-between; /* keeps logo left and menu right */
-    padding: 0 60px; /* space on both sides */
+    padding: 0 10px; /* space on both sides */
 }
 
 .main-header .logo {
@@ -1789,11 +1789,15 @@ input[type=number] {
     display: block;
   }
 }
-.sub-menu {
-  display: none;
-}
-.has-submenu.open > .sub-menu {
-  display: block;
+
+@media (max-width: 950px) {
+  .sub-menu {
+    display: none;
+  }
+
+  .has-submenu.open > .sub-menu {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {

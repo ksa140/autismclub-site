@@ -1796,5 +1796,10 @@ input[type=number] {
   display: block;
 }
 
-
+@media (max-width: 768px) {
+  .equal-height-col {
+    margin-top: 20px !important; /* override the -190px */
+    margin-bottom: 20px;
+  }
+}
 

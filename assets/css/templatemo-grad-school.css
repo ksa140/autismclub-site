@@ -1830,4 +1830,7 @@ input[type=number] {
     font-weight: 600;
   }
 }
-
+.checkbox-align label {
+  padding-top: 13px;
+  margin-left: 8px; /* You can tweak this number to make it look even better */
+}

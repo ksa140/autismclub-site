@@ -1054,21 +1054,40 @@ https://templatemo.com/tm-557-grad-school
                           </fieldset>
                         </div>
                     
-                        <!-- Program Name -->
-                        <div class="col-md-12">
-                          <fieldset>
-                            <select name="program" class="form-control" id="program" required>
-                              <option value="" disabled selected>Select Program of Interest</option>
-                              <option value="Lego Club">Lego Club</option>
-                              <option value="Robot Coding Club">Robot Coding Club</option>
-                              <option value="Reading and Writing Club">Reading and Writing Club</option>
-                              <option value="Media Arts Club">Media Arts Club</option>
-                              <!-- <option value="Music Club">Music Club</option> -->
-                              <option value="Sports Club">Sports Club</option>
-                              <option value="Sports Club">Media Creator Club</option>
-                            </select>
-                          </fieldset>
-                        </div>
+<!-- Program Checkboxes -->
+<div class="col-md-12">
+  <label class="text-white"><strong>Select Programs of Interest:</strong></label><br>
+  
+  <div class="form-check checkbox-align">
+    <input class="form-check-input" type="checkbox" name="programs" value="Lego Club" id="legoClub">
+    <label class="form-check-label text-white" for="legoClub">Lego Club</label>
+  </div>
+
+  <div class="form-check checkbox-align">
+    <input class="form-check-input" type="checkbox" name="programs" value="Robot and Coding Club" id="robotCodingClub">
+    <label class="form-check-label text-white" for="robotCodingClub">Robot and Coding Club</label>
+  </div>
+
+  <div class="form-check checkbox-align">
+    <input class="form-check-input" type="checkbox" name="programs" value="Reading and Writing Club" id="readingWritingClub">
+    <label class="form-check-label text-white" for="readingWritingClub">Reading and Writing Club</label>
+  </div>
+
+  <div class="form-check checkbox-align">
+    <input class="form-check-input" type="checkbox" name="programs" value="Media Arts Club" id="mediaArtsClub">
+    <label class="form-check-label text-white" for="mediaArtsClub">Media Arts Club</label>
+  </div>
+
+  <div class="form-check checkbox-align">
+    <input class="form-check-input" type="checkbox" name="programs" value="Sports Club" id="sportsClub">
+    <label class="form-check-label text-white" for="sportsClub">Sports Club</label>
+  </div>
+
+  <div class="form-check checkbox-align">
+    <input class="form-check-input" type="checkbox" name="programs" value="Media Creator Club" id="mediaCreatorClub">
+    <label class="form-check-label text-white" for="mediaCreatorClub">Media Creator Club</label>
+  </div>
+</div>
                     
                         <!-- Submit Button (Centered) -->
                         <div class="col-md-12 mt-3 text-center">

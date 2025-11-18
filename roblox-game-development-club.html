@@ -2,14 +2,14 @@
 <html lang="en">
 
   <head>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Media Creator Club</title>
+    <title>Autism Club</title>
     
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,8 +27,8 @@ TemplateMo 557 Grad School
 https://templatemo.com/tm-557-grad-school
 
 -->
-<style>
-      .social-icon a {
+    <style>
+         .social-icon a {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
@@ -43,10 +43,14 @@ https://templatemo.com/tm-557-grad-school
 .social-icon i {
   font-size: 18px; /* Increase the number as desired */
 }
+
 .main-nav ul.sub-menu {
   min-width: 280px !important;   /* Increase this number if needed */
 }
-</style>
+.main-nav ul.sub-menu {
+  min-width: 280px !important;   /* Increase this number if needed */
+}
+    </style>
   </head>
 
 <body class="home-page">
@@ -70,6 +74,8 @@ https://templatemo.com/tm-557-grad-school
             <li><a href="animation-digital-drawing-club.html">Animation Digital Drawing Club</a></li>
             <li><a href="roblox-game-development-club.html">Roblox Game Development Club</a></li>
           <!-- Music Club (with wider submenu if styled) -->
+
+
           <!-- <li class="has-submenu music-submenu">
             <a href="music-club.html">Music Club</a>
             <ul class="sub-menu">
@@ -110,24 +116,22 @@ https://templatemo.com/tm-557-grad-school
          style="background-image: url('assets/images/lego-photo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 50vh;">
   <div class="video-overlay header-text w-100 h-100 d-flex align-items-start justify-content-center">
     <div class="caption text-center" style="margin-top: 60px;">
-      <h2><em>Media Creator</em> Club</h2>
+      <h2><em>Roblox Game Development</em> Club</h2>
     </div>
   </div>
 </section>
 
   <!-- Main Content -->
-  <section class="section d-flex align-items-center" style="background-color: #1f2833; color: white; min-height: 120vh;">
+  <section class="section d-flex align-items-center" style="background-color: #1f2833; color: white; min-height: 100vh;">
     <div class="container">
       <div class="row justify-content-center align-items-center">
-        <div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: -322.5px;">
-          <video controls class="w-100 rounded shadow">
-            <source src="assets/videos/media-creator-club-video.mp4" type="video/mp4">
+<div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: -190px; margin-bottom: 40px;">          <video controls class="w-100 rounded shadow">
+            <source src="assets/videos/lego-club-video.mp4" type="video/mp4">
           </video>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-start" style="margin-top: 45px;">
-          <!-- <h4 class="mb-3" style="font-size: 30px;">Lego Club</h4> -->
           <p style="font-size: 17px; letter-spacing: 0.7px;">
-            The Media Creators Club is a six-month career program for participants aged 18 and above who want to pursue a future in digital media and content creation. It covers AI-powered visual design and video editing using tools like Midjourney, ChatGPT, CapCut, and OpenAI Sora, along with platform-specific storytelling and content strategies for YouTube, Instagram, and more. Participants also learn online marketing, monetization, and how to build a personal media brand or freelance career. The program empowers creative individuals to grow their digital influence and step confidently into a future shaped by their unique voice and vision.
+            We offer structured Roblox game development sessions for children and adults (ages 5–39), organized in three-month terms with gradually increasing challenges. These sessions help students learn the fundamentals of coding, digital creativity, and interactive game design within Roblox Studio.
           </p>
 
           <hr style="border: 0.25px solid white; width: 100%; margin: 10px 0;">
@@ -135,7 +139,6 @@ https://templatemo.com/tm-557-grad-school
           <p style="font-size: 17px; letter-spacing: 0.7px; margin-bottom: 0;">When</p>
           <p style="font-size: 17px; letter-spacing: 0.7px; color: white; margin-left: 3rem; margin-top: 18px;">
             Select one day from Monday to Friday. Available session times: 3:30–5:30 PM or 5:30–7:30 PM.
-            <br> (Classes available once or twice a week)
           </p>
           
           <hr style="border: 0.25px solid white; width: 100%; margin: 10px 0;">
@@ -156,12 +159,13 @@ https://templatemo.com/tm-557-grad-school
           
           <hr style="border: 0.25px solid white; width: 100%; margin: 10px 0;">
 
+
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" style="background-color: #1f2833; color: white; padding: 40px 0;">
+  <section class="section" style="background-color: #1f2833; color: white; padding: 40px 0;" style="margin-top: 100px;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -216,22 +220,15 @@ https://templatemo.com/tm-557-grad-school
         // Submenu toggle for mobile screens
         $('.has-submenu > a').on('click', function(e) {
           const isMobile = $(window).width() <= 991;
-          const href = $(this).attr('href');
-          const isClickable = href && href !== "#";
-        
           if (isMobile) {
-            // Only prevent default if there's no actual link (href="#")
-            if (!isClickable) {
-              e.preventDefault();
-            }
-        
+            e.preventDefault();
             e.stopPropagation();
         
             const parentItem = $(this).parent();
         
-            // Collapse other top-level items if this is top-level
+            // If this is a nested submenu (like Sports inside Club), don't collapse siblings of top-level
             if (!$(this).closest('.sub-menu').length) {
-              $('.main-menu > .has-submenu').not(parentItem).removeClass('open');
+              $('.has-submenu').not(parentItem).removeClass('open');
             }
         
             parentItem.toggleClass('open');
@@ -291,8 +288,6 @@ https://templatemo.com/tm-557-grad-school
         checkSection();
       });
   </script>
-
-  
 
   <script>
     // Hamburger menu toggle

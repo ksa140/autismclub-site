@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <title>Events</title>
+  <title>Golf Club - Autism Club</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,9 +17,11 @@
   <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
-        .social-icon a {
+    .social-icon a {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
@@ -34,13 +36,65 @@
 .social-icon i {
   font-size: 18px; /* Increase the number as desired */
 }
+    .sports-card {
+      background: rgba(255, 255, 255, 0.03);
+      color: white;
+      padding: 30px 20px;
+      border-radius: 20px;
+      height: 100%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      backdrop-filter: blur(8px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    
+    .sports-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+      background-color: rgba(245, 164, 37, 0.95);
+      color: #1f2833;
+    }
+    
+    .sports-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .sports-icon {
+      font-size: 60px;
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+    
+    .sports-card:hover .sports-icon {
+      color: #1f2833;
+    }
+    
+    /* Hide description by default */
+    .sports-description {
+      font-size: 14px;
+      max-width: 220px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    /* Reveal on hover */
+    .sports-card:hover .sports-description {
+      opacity: 1;
+      transform: translateY(0);
+    }
 .main-nav ul.sub-menu {
   min-width: 280px !important;   /* Increase this number if needed */
 }
-  </style>
+      </style>
 </head>
-
-
 
 <body class="sub-page">
 
@@ -62,8 +116,6 @@
             <li><a href="animation-digital-drawing-club.html">Animation Digital Drawing Club</a></li>
             <li><a href="roblox-game-development-club.html">Roblox Game Development Club</a></li>
           <!-- Music Club (with wider submenu if styled) -->
-
-
           <!-- <li class="has-submenu music-submenu">
             <a href="music-club.html">Music Club</a>
             <ul class="sub-menu">
@@ -104,134 +156,84 @@
          style="background-image: url('assets/images/lego-photo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 50vh;">
   <div class="video-overlay header-text w-100 h-100 d-flex align-items-start justify-content-center">
     <div class="caption text-center" style="margin-top: 60px;">
-      <h2><em>Events</em></h2>
+      <h2><em>Golf</em> Club</h2>
     </div>
   </div>
 </section>
 
-    <!-- Birthday Section -->
-    <!-- Section Title -->
-    <section class="section d-flex align-items-center justify-content-center" style="background-color: #1f2833; color: white; padding: 80px 0 0px 0;">
-      <div class="container text-center">
-        <h2 style="font-size: 48px; font-weight: 800;">
-          <span style="color: #f5a425;">BIRTHDAY</span> <span style="color: white;">PARTY</span>
-        </h2>
-      </div>
-    </section>
-    <section class="section" style="background-color: #1f2833; color: white;">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: 50px;">
-            <img src="assets/images/Birthday.jpeg" alt="Birthday" class="w-100 rounded shadow">
-          </div>
+  <!-- Main Content -->
+  <section class="section d-flex align-items-center" style="background-color: #1f2833; color: white; min-height: 140vh;">
+    <div class="container">
 
-          <!-- Description moved downward slightly -->
-          <div class="col-lg-6 d-flex flex-column justify-content-center" style="margin-top: -200px;">
-
-            <p style="font-size: 22px; font-weight: 500; line-height: 1.6; color: white; margin-top: 220px;">
-              A monthly celebration where children with autism enjoy cake, games, and community. A joyful and inclusive environment for all.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Christmas Section -->
-    <!-- Section Title -->
-    <section class="section d-flex align-items-center justify-content-center" style="background-color: #1f2833; color: white; padding: 80px 0 0px 0;">
-      <div class="container text-center">
-        <h2 style="font-size: 48px; font-weight: 800;">
-          <span style="color: #f5a425;">CHRISTMAS</span> <span style="color: white;"> CELEBRATION</span>
-        </h2>
-      </div>
-    </section>
-    <section class="section" style="background-color: #1f2833; color: white;">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: 50px;">
-              <img src="assets/images/Christmas.jpeg" alt="Birthday" class="w-100 rounded shadow">
+      <div class="container mt-5">
+        <div class="row justify-content-center text-center">
+          <!-- Golf Club -->
+          <div class="col-md-6 col-lg-8 mb-4">
+            <div class="sports-card">
+              <h5 class="sports-title">Golf Club</h5>
+              <i class="fas fa-flag sports-icon"></i>
+              <p class="sports-description">Practice focus, posture, and coordination through structured golf activities</p>
             </div>
-
-          <!-- Description moved downward slightly -->
-          <div class="col-lg-6 d-flex flex-column justify-content-center" style="margin-top: -200px;">
-
-            <p style="font-size: 22px; font-weight: 500; line-height: 1.6; color: white; margin-top: 220px;">
-              A festive gathering with music, decorations, gift exchange, and activities that bring the holiday spirit to our Autism Club community.
-            </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Robotics Competition Section -->
-    <!-- Section Title -->
-    <section class="section d-flex align-items-center justify-content-center" style="background-color: #1f2833; color: white; padding: 80px 0 0px 0;">
-      <div class="container text-center">
-        <h2 style="font-size: 48px; font-weight: 800;">
-          <span style="color: #f5a425;">ROBOTICS</span> <span style="color: white;">COMPETITION</span>
-        </h2>
-      </div>
-    </section>
-    <section class="section" style="background-color: #1f2833; color: white;">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: 50px;">
-              <img src="assets/images/Robot.jpeg" alt="Birthday" class="w-100 rounded shadow">
-            </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: -230px;">
+          <video controls class="w-100 rounded shadow">
+            <source src="assets/videos/sports-club-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-start" style="margin-top: 25px;">
+          <!-- <h4 class="mb-3" style="font-size: 30px;">Lego Club</h4> -->
+          <br>
 
-          <!-- Description moved downward slightly -->
-          <div class="col-lg-6 d-flex flex-column justify-content-center" style="margin-top: -200px;">
+          <p style="font-size: 17px; letter-spacing: 0.7px;">
+            The Sports Club provides a supportive space for all ages (5 to 80) to develop physical skills through focused programs in golf and running. Each three-month term introduces new techniques to build coordination, confidence, and self-discipline. These activities support motor planning, emotional regulation, and social connection while promoting a positive, active lifestyle.
+          </p>
+          <hr style="border: 0.25px solid white; width: 100%; margin: 10px 0;">
 
-            <p style="font-size: 22px; font-weight: 500; line-height: 1.6; color: white; margin-top: 220px;">
-              An exciting annual event where participants team up to design, build, and showcase their robots in a friendly and fun-filled competition.
-            </p>
-          </div>
+          <p style="font-size: 17px; letter-spacing: 0.7px; margin-bottom: 0;">When</p>
+          <p style="font-size: 17px; letter-spacing: 0.7px; color: white; margin-left: 3rem; margin-top: 18px;">
+            Select one day from Monday to Friday. Available session times: 3:30–5:30 PM or 5:30–7:30 PM.
+          </p>
+          
+          <hr style="border: 0.25px solid white; width: 100%; margin: 10px 0;">
+          
+          <p style="font-size: 17px; letter-spacing: 0.7px; margin-bottom: 0;">Where</p>
+          <p style="font-size: 17px; letter-spacing: 0.7px; color: white; margin-left: 3rem; margin-top: 18px;">
+            #204B 10190 152A St. Surrey BC V3R 1J7 <br>
+            Autism Club Center
+          </p>
+          
+          <hr style="border: 0.25px solid white; width: 100%; margin: 10px 0;">
+          
+          <p style="font-size: 17px; letter-spacing: 0.7px; margin-bottom: 0;">Cost</p>
+          <p style="font-size: 17px; letter-spacing: 0.7px; color: white; margin-left: 3rem; margin-top: 18px;">
+            1:1 Session&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$50/hour ($80/hour for Golf Club) <br> <br> 
+            Group Class&nbsp&nbsp&nbsp$40/hour <br> <br>
+            *Golf clubs only offer 1:1 sessions <br> <br>
+          </p>
+          
+
         </div>
       </div>
-    </section>
-
-    <!-- LEGO LEAGUE Section -->
-    <!-- Section Title -->
-    <section class="section d-flex align-items-center justify-content-center" style="background-color: #1f2833; color: white; padding: 80px 0 0px 0;">
-      <div class="container text-center">
-        <h2 style="font-size: 48px; font-weight: 800;">
-          <span style="color: #f5a425;">LEGO LEAGUE</span> <span style="color: white;">COMPETITION</span>
-        </h2>
-      </div>
-    </section>
-    <section class="section" style="background-color: #1f2833; color: white;">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 text-center mb-4 equal-height-col" style="margin-top: 50px;">
-              <img src="assets/images/Lego.jpeg" alt="Birthday" class="w-100 rounded shadow">
-            </div>
-
-          <!-- Description moved downward slightly -->
-          <div class="col-lg-6 d-flex flex-column justify-content-center" style="margin-top: -200px;">
-
-            <p style="font-size: 22px; font-weight: 500; line-height: 1.6; color: white; margin-top: 220px;">
-              Registered participants build LEGO-based robots to solve real-world challenges in an official FLL tournament. Encourages STEM skills, teamwork, and innovation.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
   
-    <section class="section" style="background-color: #1f2833; color: white; padding: 40px 0;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h4 style="margin-bottom: 20px;">Contact Information</h4>
-            <p style="font-size: 18px; margin-bottom: 10px;">📍 Address: Autism Club Center (powered by KidsForTech), #204B 10190 152A St. Surrey BC V3R 1J7</p>
-            <p style="font-size: 18px; margin-bottom: 10px;">📞 Phone: (778) 955-9968</p>
-            <p style="font-size: 18px; margin-bottom: 10px;">✉️ Email: info@kidsfortech.com</p>
-          </div>
+
+  <section class="section" style="background-color: #1f2833; color: white; padding: 40px 0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 style="margin-bottom: 20px;">Contact Information</h4>
+          <p style="font-size: 18px; margin-bottom: 10px;">📍 Address: Autism Club Center (powered by KidsForTech), #204B 10190 152A St. Surrey BC V3R 1J7</p>
+          <p style="font-size: 18px; margin-bottom: 10px;">📞 Phone: (778) 955-9968</p>
+          <p style="font-size: 18px; margin-bottom: 10px;">✉️ Email: info@kidsfortech.com</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   <footer style="background-color: #0b1a2e;">
     <div class="container">
